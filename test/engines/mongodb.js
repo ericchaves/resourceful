@@ -10,7 +10,8 @@ engine.options = {
   database: 'test',
   host: '127.0.0.1',
   port: 27017,
-  collection: 'resourceful'
+  collection: 'resourceful',
+  db_options: {safe:true}
 };
 
 engine.load = function (resourceful, data, callback) {
